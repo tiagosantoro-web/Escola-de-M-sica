@@ -16,8 +16,11 @@ Site institucional da Music Ville Escola de Música (Alphaville), criado pela So
 
 ## Identidade
 
-- Azul-marinho profundo (`#0b1424`), champagne (`#d9bd84`), marfim (`#f8f4ed`) e areia (`#efe7da`).
+- Preto (`#111013`) e vermelho do logo (`#d7262e`) nos botões de conversão.
+- Champagne (`#d9bd84`) só em detalhes finos: itálicos dos títulos, linhas e ícones.
+- Marfim (`#f8f4ed`) e areia (`#efe7da`) nas seções claras.
 - Pequenos acentos coloridos só nos detalhes dos cursos e no equalizador do topo.
+- Logo sempre com fundo transparente, sem placa ou caixa atrás.
 - Títulos em Bodoni Moda; textos em Manrope. Números e rótulos sempre em Manrope.
 - Moldura em arco (`.sd-arch`) é o elemento de assinatura: usar nas fotos de destaque.
 

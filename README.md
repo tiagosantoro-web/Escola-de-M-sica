@@ -11,9 +11,20 @@ Abra `index.html` no navegador. As regras de código estão em `AGENTS.md`.
 - `index.html`: página completa, com blocos identificados por comentários.
 - `css/style.css`: estilos organizados por bloco, com a responsividade no final.
 - `js/script.js`: configuração do cliente, menu, WhatsApp, formulário de interesse e animações.
-- `assets/images/`: fotos em WebP (15–45 KB cada).
+- `assets/images/`: fotos em WebP (15–45 KB cada), logo (`logo-music-ville.webp`, fundo transparente) e ícones da aba.
 - `assets/fonts/`: Bodoni Moda (títulos) e Manrope (textos), licença SIL Open Font.
-- `_fontes/`: fotos originais em alta resolução. Fica fora do Git.
+- `_fontes/`: fotos originais, a imagem do logo enviada pelo cliente e o script de recorte (`_fontes/logo/recorte-logo.cjs`). Fica fora do Git.
+
+## Identidade
+
+O logo enviado é vermelho e preto. Por isso o site usa:
+
+- **Base:** preto.
+- **Botões de conversão:** vermelho do logo.
+- **Detalhes finos:** champagne (títulos em itálico, linhas e ícones), como pedia o briefing.
+- **Seções claras:** marfim e areia.
+
+No topo, o logo aparece grande e "pendurado" abaixo da barra. Ao rolar, ele encolhe para caber no cabeçalho.
 
 ## Seções
 
@@ -44,7 +55,10 @@ Edite o início de `js/script.js`:
 Procure `PENDENTE` nos arquivos.
 
 - **WhatsApp:** obrigatório para os botões e o formulário funcionarem.
-- **Logo oficial:** a marca atual (nota musical + nome) é provisória.
+- **Arquivo original do logo** (PNG transparente, SVG, AI ou PDF):
+  - O logo atual foi recortado de uma foto de fachada (mockup com parede de tijolos e marca d'água "HG COMPANY").
+  - Tem 399 × 467 px e alguns riscos finos do rejunte por dentro do anel.
+  - Com o arquivo original, é só substituir `assets/images/logo-music-ville.webp` e os ícones.
 - **Fotos reais da escola**, dos professores e das aulas. As atuais são ilustrativas (veja "Créditos das fotos").
 - **Horários de atendimento**, CEP e telefone, para a página e os dados estruturados.
 - **Instagram.**
@@ -77,7 +91,10 @@ Todas vêm do Unsplash, sob a [Unsplash License](https://unsplash.com/license): 
 ## Testes realizados (19/11/2026)
 
 - **Rolagem lateral:** nenhuma em 320, 375, 480, 768, 1024 e 1440 px.
-- **Imagens:** as 16 carregam.
+- **Imagens:** as 18 carregam (16 fotos e o logo, que aparece no cabeçalho e no rodapé).
+- **Cabeçalho:**
+  - No topo, o logo tem 86 px no celular e 108 px no desktop.
+  - Ao rolar, encolhe para cerca de 62 px, dentro da barra, que fica opaca.
 - **Menu do celular:** abre, fecha ao tocar num link e fecha com Esc.
 - **Sem WhatsApp configurado:**
   - O "Quero aprender" preenche o curso no formulário.
